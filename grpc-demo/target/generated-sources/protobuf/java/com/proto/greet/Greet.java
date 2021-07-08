@@ -29,6 +29,26 @@ public final class Greet {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_greet_GreetResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_greet_GreetManyTimesRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_greet_GreetManyTimesRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_greet_GreetManyTimesResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_greet_GreetManyTimesResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_greet_LongGreetRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_greet_LongGreetRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_greet_LongGreetResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_greet_LongGreetResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -38,17 +58,27 @@ public final class Greet {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021greet/greet.proto\022\005greet\"1\n\010Greeting\022\022" +
-      "\n\nfirst_name\030\001 \001(\t\022\021\n\tlast_name\030\002 \001(\t\"1\n" +
-      "\014GreetRequest\022!\n\010greeting\030\001 \001(\0132\017.greet." +
-      "Greeting\"\037\n\rGreetResponse\022\016\n\006result\030\001 \001(" +
-      "\t2D\n\014GreetService\0224\n\005Greet\022\023.greet.Greet" +
-      "Request\032\024.greet.GreetResponse\"\000B\023\n\017com.p" +
-      "roto.greetP\001b\006proto3"
+      "\n\021greet/greet.proto\022\005greet\032\035google/api/d" +
+      "istribution.proto\"1\n\010Greeting\022\022\n\nfirst_n" +
+      "ame\030\001 \001(\t\022\021\n\tlast_name\030\002 \001(\t\"1\n\014GreetReq" +
+      "uest\022!\n\010greeting\030\001 \001(\0132\017.greet.Greeting\"" +
+      "\037\n\rGreetResponse\022\016\n\006result\030\001 \001(\t\":\n\025Gree" +
+      "tManyTimesRequest\022!\n\010greeting\030\001 \001(\0132\017.gr" +
+      "eet.Greeting\"(\n\026GreetManyTimesResponse\022\016" +
+      "\n\006result\030\001 \001(\t\"5\n\020LongGreetRequest\022!\n\010gr" +
+      "eeting\030\001 \001(\0132\017.greet.Greeting\"#\n\021LongGre" +
+      "etResponse\022\016\n\006result\030\001 \001(\t2\333\001\n\014GreetServ" +
+      "ice\0224\n\005Greet\022\023.greet.GreetRequest\032\024.gree" +
+      "t.GreetResponse\"\000\022Q\n\016GreetManyTimes\022\034.gr" +
+      "eet.GreetManyTimesRequest\032\035.greet.GreetM" +
+      "anyTimesResponse\"\0000\001\022B\n\tLongGreet\022\027.gree" +
+      "t.LongGreetRequest\032\030.greet.LongGreetResp" +
+      "onse\"\000(\001B\023\n\017com.proto.greetP\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          com.google.api.DistributionProto.getDescriptor(),
         });
     internal_static_greet_Greeting_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -68,6 +98,31 @@ public final class Greet {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_greet_GreetResponse_descriptor,
         new java.lang.String[] { "Result", });
+    internal_static_greet_GreetManyTimesRequest_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_greet_GreetManyTimesRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_greet_GreetManyTimesRequest_descriptor,
+        new java.lang.String[] { "Greeting", });
+    internal_static_greet_GreetManyTimesResponse_descriptor =
+      getDescriptor().getMessageTypes().get(4);
+    internal_static_greet_GreetManyTimesResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_greet_GreetManyTimesResponse_descriptor,
+        new java.lang.String[] { "Result", });
+    internal_static_greet_LongGreetRequest_descriptor =
+      getDescriptor().getMessageTypes().get(5);
+    internal_static_greet_LongGreetRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_greet_LongGreetRequest_descriptor,
+        new java.lang.String[] { "Greeting", });
+    internal_static_greet_LongGreetResponse_descriptor =
+      getDescriptor().getMessageTypes().get(6);
+    internal_static_greet_LongGreetResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_greet_LongGreetResponse_descriptor,
+        new java.lang.String[] { "Result", });
+    com.google.api.DistributionProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)
