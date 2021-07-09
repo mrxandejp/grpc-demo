@@ -2,8 +2,6 @@ syntax = "proto3";
 
 package greet;
 
-import "google/api/distribution.proto";
-
 option java_package = "com.proto.greet";
 option java_multiple_files = true;
 
@@ -36,6 +34,14 @@ message LongGreetResponse{
   string result = 1;
 }
 
+message GreetEveryoneRequest{
+  Greeting greeting = 1;
+}
+
+message GreetEveryoneResponse{
+  string result = 1;
+}
+
 service GreetService {
   //Unary
   rpc Greet(GreetRequest) returns (GreetResponse) {};
@@ -46,4 +52,6 @@ service GreetService {
   //Client Streaming
   rpc LongGreet(stream LongGreetRequest) returns (LongGreetResponse) {};
 
+  //BiDi Streaming
+  rpc GreetEveryone(stream GreetEveryoneRequest) returns (stream GreetEveryoneResponse) {};
 }
